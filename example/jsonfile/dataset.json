@@ -1,0 +1,19 @@
+{
+	"proteins": [
+		{
+			"name": "lacI",
+			"description": "lac operon repressor",
+			"accession": "P03023"
+		},
+		{
+			"name": "tetR",
+			"description": "reduces repressor affinity for tetA promoter operator sites",
+			"accession": "P0ACT4"
+		},
+		{
+			"name": "Beta-galactosidase",
+			"description": "encoded by lacZ",
+			"accession": "P00722"
+		}
+	]
+}
