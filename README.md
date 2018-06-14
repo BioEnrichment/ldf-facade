@@ -46,7 +46,7 @@ This allows the ldf-server to create prev and next links for each page, so that 
 
 ## Implementing pattern
 
-You can register as many user callbacks for `pattern` as required.  Each pattern callback is associated with a pattern.  For example, a user callback registered for `{ s: BOUND, p: UNBOUND, o: UNBOUND }` would match triple patterns where the subject is specified but the predicate and object are not (e.g. tell me everything you know about this subject).
+You can register as many user callbacks for `pattern` as required.  Each pattern callback is associated with a pattern.  For example, a user callback registered for `{ s: BOUND, p: UNBOUND, o: UNBOUND }` would match triple patterns where the subject is specified but the predicate and object are not (i.e. tell me everything you know about this subject).
 
 Where a pattern is requested of the server and no user callback is registered to match it, ldf-facade will attempt to generalise (for unbound -> bound) or specialize by filtering (for bound -> unbound).  In theory, this means that registering any one pattern allows any other pattern to be answered, but as generalisation and specialisation is likely to be very expensive, any patterns that can be answered directly should be registered.
 
