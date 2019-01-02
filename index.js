@@ -1,5 +1,5 @@
 
-const LDFServer = require('./lib/TinyLDFServer')
+const LDFServer = require('./lib/LDFServer')
 
 module.exports = LDFServer
 
